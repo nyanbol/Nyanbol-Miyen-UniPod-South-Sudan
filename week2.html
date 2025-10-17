@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>week 2: Principles and Practices - your_name</title>
+		<title>Week 2: Principles and Practices - Your Digital Workshop Notebook</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
 		
 		<style>
-			/* Your existing week2 styles here */
 			.week-date { color: #666; font-style: italic; }
 			.less-bold { font-weight: 400; }
 			.image-caption { text-align: center; font-style: italic; color: #666; margin-top: -10px; }
@@ -110,15 +109,15 @@
 				<div class="inner">
 					<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo"><strong>UNIPOD Rwanda |</strong> your_name</a>
+						<a href="index.html" class="logo"><strong>UNIPOD South Sudan |</strong> Nyanbol Miyen</a>
 						<ul class="icons">
-							<li><a href="your-github-link" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://github.com/nyanbol" class="icon brands fa-github"><span class="label">Github</span></a></li>
 							<li><a href="your-linkedin-link" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="mailto:your-email@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 					</header>
 
-					<!-- week 2 Content -->
+					<!-- Week 2 Content -->
 					<section>
 						<div class="inpage-nav-box">
 							<h4>
@@ -133,8 +132,8 @@
 						</div>
 
 						<header class="main">
-							<h1>week 2: weekly task</h1>
-							<p class="week-date">Date: From - To (include Dates)</p>
+							<h1>Week 2: Your Digital Workshop Notebook</h1>
+							<p class="week-date">Date: 10th October 2025</p>
 						</header>
 
 						<!-- Summary of the weekly task -->
@@ -143,14 +142,14 @@
 								<h3>Quick Summary</h3>
 							</header>
 							<ul class="alt">
-								<li><strong>Skills Learned:</strong> </li>
-								<li><strong>Digital Tools and Software Used:</strong> </li>
-								<li><strong>Topics:</strong> </li>
-								<li><strong>Key Concepts:</strong> </li>
-								<li><strong>Challenges Faced:</strong> </li>
+								<li><strong>Skills Learned:</strong> Git version control, GitHub repository management, SSH key setup, VS Code usage, GitHub Pages deployment</li>
+								<li><strong>Digital Tools and Software Used:</strong> Git, Git Bash, VS Code, GitHub, SSH keys</li>
+								<li><strong>Topics:</strong> Documentation, version control, repository management, secure authentication</li>
+								<li><strong>Key Concepts:</strong> Git workflow (add, commit, push), SSH authentication, forking repositories, GitHub Pages</li>
+								<li><strong>Challenges Faced:</strong> I couldn't find my folder after I cloned it but that wasn't a serious issue though</li>
 							</ul>
 						</div>
-						<!-- ... all your existing week2 content bellow... -->
+
 						<div id="Notes" class="tab-content active">
 							<div>
 								&nbsp;
@@ -158,18 +157,160 @@
 								<header class="major">
 								<h2 id="intro-section">Introduction</h2>
 								</header>
-								<p>Add your introduction</p>
+								<p>This week focused on mastering documentation practices using GitHub, establishing the foundation for our digital portfolio. As the Chinese proverb says, "The palest ink is better than the best memory," emphasizing the importance of documenting our work throughout the program.</p>
+								<p>We learned that documentation is a superpower that serves multiple purposes: helping us remember our work when returning to projects months later, building our professional portfolio, enabling collaboration with others, and serving as the primary method for submitting and getting graded on our work.</p>
+								
+								<div class="image-container">
+									<img src="images/documentation-superpower.png" alt="Documentation is a superpower" style="max-width: 100%; height: auto;">
+									<p class="image-caption">Documentation serves multiple important purposes</p>
+								</div>
+								
+								<p>The week involved setting up essential tools including Git for version control, VS Code as our text editor, Git Bash (for Windows users) as our terminal, GitHub.com as our cloud platform, and SSH keys for secure authentication.</p>
 
 								<header class="major">
 								<h2 id="process-docs-section">Process Documentation</h2>
 								</header>
-								<p>Add the process documentation of this week task</p>
+								
+								<h3>Tool Installation and Setup</h3>
+								<p>The process began with installing essential tools:</p>
+								<ul>
+									<li><strong>Git & Git Bash:</strong> Downloaded from git-scm.com with default settings</li>
+								</ul>
+								
+								<div class="image-container">
+									<img src="images/git-installation.png" alt="Git installation process" style="max-width: 100%; height: auto;">
+									<p class="image-caption">Installing Git from git-scm.com</p>
+								</div>
+								
+								<ul>
+									<li><strong>VS Code:</strong> Downloaded from code.visualstudio.com for its powerful features and Git integration</li>
+								</ul>
+								
+								<div class="image-container">
+									<img src="images/vs-code-interface.png" alt="VS Code interface" style="max-width: 100%; height: auto;">
+									<p class="image-caption">VS Code with Git integration</p>
+								</div>
+								
+								<ul>
+									<li><strong>GitHub Account:</strong> Created or verified our professional GitHub accounts</li>
+								</ul>
+								
+								<h3>SSH Key Setup</h3>
+								<p>We established secure password-less authentication with GitHub using SSH keys:</p>
+								<ol>
+									<li>Generated SSH key pair using: <code>ssh-keygen -t ed25519 -C "cyriannayk@gmail.com"</code></li>
+								</ol>
+								
+								<div class="image-container">
+									<img src="assets/images/week2/ssh-key-generation.png" alt="SSH key generation" style="max-width: 100%; height: auto;">
+									<p class="image-caption">Generating SSH keys in Git Bash</p>
+								</div>
+								
+								<ol start="2">
+									<li>Accepted default location and optionally set a passphrase</li>
+									<li>Printed and copied the public key using: <code>cat ~/.ssh/id_ed25519.pub</code></li>
+									<li>Added the public key to GitHub in Settings → SSH and GPG keys</li>
+								</ol>
+								
+								<div class="image-container">
+									<img src="images/github-ssh-keys.png" alt="GitHub SSH keys settings" style="max-width: 100%; height: auto;">
+									<p class="image-caption">Adding SSH key to GitHub settings</p>
+								</div>
+								
+								<h3>Repository Creation and Management</h3>
+								<p>We created our first repository on GitHub:</p>
+								<ul>
+									<li>Named using the format: username-UniPod_Name</li>
+									<li>Added description: "My portfolio for the UniPod Digital Fabrication Program"</li>
+									<li>Set visibility to Public</li>
+									<li>Initialized with a README file</li>
+								</ul>
+								
+								<div class="image-container">
+									<img src="images/create-repository.png" alt="Creating repository on GitHub" style="max-width: 100%; height: auto;">
+									<p class="image-caption">Creating new repository on GitHub</p>
+								</div>
+								
+								<h3>Forking and Cloning</h3>
+								<p>We practiced forking an existing repository to create our own copy, then renamed it using the format: your_name-unipodName.</p>
+								
+								<div class="image-container">
+									<img src="images/fork-repository.png" alt="Forking repository" style="max-width: 100%; height: auto;">
+									<p class="image-caption">Fork button on GitHub repository</p>
+								</div>
+								
+								<p>We then cloned the repository to our local machine using Git Bash:</p>
+								<code>git clone git@github.com:your-username/repository-name.git</code>
+								
+								<div class="image-container">
+									<img src="images/git-clone-process.png" alt="Git clone process" style="max-width: 100%; height: auto;">
+									<p class="image-caption">Cloning repository to local machine</p>
+								</div>
+								
+								<h3>Making and Pushing Changes</h3>
+								<p>We learned the essential Git workflow:</p>
+								<ol>
+									<li>Opened our repository folder in VS Code</li>
+									<li>Edited the README.md file, adding: <code>## Welcome to My UniPod Journey!</code></li>
+								</ol>
+								
+								<div class="image-container">
+									<img src="images/vscode-readme-edit.png" alt="Editing README in VS Code" style="max-width: 100%; height: auto;">
+									<p class="image-caption">Editing README.md file in VS Code</p>
+								</div>
+								
+								<ol start="3">
+									<li>Used the three-step Git workflow:
+										<ul>
+											<li><code>git add README.md</code> - Staged our changes</li>
+											<li><code>git commit -m "Update README with a welcome message"</code> - Saved changes locally</li>
+											<li><code>git push origin main</code> - Pushed changes to GitHub</li>
+										</ul>
+									</li>
+								</ol>
+								
+								<div class="image-container">
+									<img src="assets/images/week2/git-workflow-commands.png" alt="Git workflow commands" style="max-width: 100%; height: auto;">
+									<p class="image-caption">Git add, commit, and push commands</p>
+								</div>
+								
+								<h3>GitHub Pages Deployment</h3>
+								<p>We turned our repository into a live website using GitHub Pages:</p>
+								<ol>
+									<li>Went to repository Settings → Pages</li>
+									<li>Selected "Deploy from a branch"</li>
+									<li>Chose the main branch and root folder</li>
+									<li>Saved settings</li>
+								</ol>
+								
+								<div class="image-container">
+									<img src="images/github-pages-settings.png" alt="GitHub Pages settings" style="max-width: 100%; height: auto;">
+									<p class="image-caption">GitHub Pages configuration</p>
+								</div>
+								
+								<ol start="5">
+									<li>Our site became live at: https://your-username.github.io/unipod-portfolio/</li>
+								</ol>
+								
+								<div class="image-container">
+									<img src="assets/images/week2/live-github-pages.png" alt="Live GitHub Pages site" style="max-width: 100%; height: auto;">
+									<p class="image-caption">Live website deployed via GitHub Pages</p>
+								</div>
 						
 								<!-- Reflection -->
 								<header class="major">
 								<h2 id="reflection-section">Reflection</h2>
 								</header>
-								<p>Add your reflection</p>
+								<p>This week was foundational in establishing our digital workflow and documentation practices. Learning Git and GitHub is crucial not just for this program but for any modern technical career. The concept of version control was initially challenging to grasp, but the three-step workflow (add, commit, push) became intuitive with practice.</p>
+								<p>Setting up SSH keys was particularly valuable as it provides a secure way to authenticate with GitHub without constantly entering passwords. This will streamline our workflow throughout the program.</p>
+								<p>Creating my first repository and deploying it with GitHub Pages was empowering. Seeing my work live on the web after following the steps made the abstract concepts concrete. The ability to fork repositories is especially powerful for collaboration and contributing to open-source projects.</p>
+								<p>Documentation, as emphasized this week, is indeed a superpower. It not only helps others understand our work but also serves as a personal reference when returning to projects. I'm beginning to see how this practice will be essential throughout the UniPod program and beyond.</p>
+								<p>This week's activities have established a solid foundation for my digital portfolio and documentation habits. I'm looking forward to applying these skills to future projects and continuing to build my GitHub profile as a professional portfolio.</p>
+								
+								<div class="image-container">
+									<img src="assets/images/week2/completed-setup.png" alt="Completed setup" style="max-width: 100%; height: auto;">
+									<p class="image-caption">All tools successfully installed and configured</p>
+								</div>
 								
 							</div>
 						</div>
